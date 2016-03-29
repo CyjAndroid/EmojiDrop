@@ -74,6 +74,7 @@ public class MainActivity extends Activity implements OnClickListener {
 					float y = event.getY();
 					float moveY = y -startY ;
 					startY = y;
+					//获取手指滑动的偏移量 使动画不会位置错乱
 					if(emojiView!=null){
 						LayoutParams layoutParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
 						layoutParams.topMargin = (int) (emojiView.getTop()+moveY);
